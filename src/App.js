@@ -17,14 +17,17 @@ export default () => {
       setMovieList(list);
 
     };
-    
+
     loadAll();
 
   }, [])
 
   return (
-    <div>
-      Olá Mundo!
+    <div className="page">
+      Header
+      Destaque
+      As listas
+      Rodapé
     </div>
   )
 }
