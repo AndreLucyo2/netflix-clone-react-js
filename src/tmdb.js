@@ -14,8 +14,11 @@ const API_BASEurl = 'https://api.themoviedb.org/3'
 
 //Manda um endpoint requisita e retorna um json
 const basicFetch = async (endPoint) => {
+    //Executa e espera a resposta:
     const req = await fetch(`${API_BASEurl}${endPoint}`)
+    //Quando recebe vai para este linha: espera a resposta
     const json = await req.json();
+    //retorna:
     return json;
 }
 
